@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    background-color: red;
+  }
+
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  /* Contenedor Flex */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 20px;
+  }
+
+  /* Cada cuadro */
+  .cuadro {
+    flex: 1 1 200px;  /* Permite el crecimiento y encogimiento con tamaño base de 200px */
+    background-color: green;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+  }
+
+  /* Ejemplo de cuadro con color diferente */
+  .cuadro:nth-child(odd) {
+    background-color: blue
+  }
